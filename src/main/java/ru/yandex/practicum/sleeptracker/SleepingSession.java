@@ -53,11 +53,12 @@ public class SleepingSession {
 
         QualityOfSleep quality;
 
-        try{
+        try {
             quality = QualityOfSleep.valueOf(line.toString());
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             quality = QualityOfSleep.ERROR;
         }
+
         return new SleepingSession(dayOfStart, timeOfStart, dayOfEnd, timeOfEnd, quality);
     }
 
