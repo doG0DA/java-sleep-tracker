@@ -38,7 +38,7 @@ public class SleepTrackerAppTest {
 
         SleepAnalysisResult result = function.apply(List.of(session1,session2));
 
-        assertEquals("Минимальная продолжительность сессии в минутах: 240 минут!", result.toString());
+        assertEquals("Минимальная продолжительность сессии в минутах: 240", result.toString());
     }
 
     @Test
@@ -51,7 +51,7 @@ public class SleepTrackerAppTest {
 
         SleepAnalysisResult result = function.apply(List.of(session1,session2));
 
-        assertEquals("Минимальная продолжительность сессии в минутах: 10 минут!", result.toString());
+        assertEquals("Минимальная продолжительность сессии в минутах: 10", result.toString());
     }
 
     @Test
@@ -64,7 +64,7 @@ public class SleepTrackerAppTest {
 
         SleepAnalysisResult result = function.apply(List.of(session1,session2));
 
-        assertEquals("Максимальная продолжительность сессии в минутах составила: 240 минут!", result.toString());
+        assertEquals("Максимальная продолжительность сессии в минутах составила: 240", result.toString());
     }
 
     @Test
@@ -77,7 +77,7 @@ public class SleepTrackerAppTest {
 
         SleepAnalysisResult result = function.apply(List.of(session1,session2));
 
-        assertEquals("Максимальная продолжительность сессии составила: 10 минут!", result.toString());
+        assertEquals("Максимальная продолжительность сессии в минутах составила: 10", result.toString());
     }
 
     @Test
