@@ -13,7 +13,7 @@ public enum Chronotype {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return title;
     }
 }
