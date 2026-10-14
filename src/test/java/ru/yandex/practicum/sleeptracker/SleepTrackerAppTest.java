@@ -81,7 +81,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void AverageTimeOfSleepSesionsIs20Minutes() {
+    void averageTimeOfSleepSesionsIs20Minutes() {
 
         AverageTimeOfSleeping function = new AverageTimeOfSleeping();
 
@@ -94,7 +94,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void AverageTimeOfSleepSesionsIs15Minutes() {
+    void averageTimeOfSleepSesionsIs15Minutes() {
 
         AverageTimeOfSleeping function = new AverageTimeOfSleeping();
 
@@ -108,7 +108,7 @@ public class SleepTrackerAppTest {
 
 
     @Test
-    void CountOfNightsWithBadMark2() {
+    void countOfNightsWithBadMark2() {
 
         BadSleepSessions function = new BadSleepSessions();
 
@@ -121,7 +121,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void CountOfNightsWithBadMark0() {
+    void countOfNightsWithBadMark0() {
 
         BadSleepSessions function = new BadSleepSessions();
 
@@ -134,7 +134,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void CountOfNightsWithoutSleeping0() {
+    void countOfNightsWithoutSleeping0() {
 
         NightsWithoutSleeping function = new NightsWithoutSleeping();
 
@@ -147,7 +147,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void CountOfNightsWithoutSleeping1() {
+    void countOfNightsWithoutSleeping1() {
 
         NightsWithoutSleeping function = new NightsWithoutSleeping();
 
@@ -160,7 +160,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void CountOfNightsWithoutSleeping2() {
+    void countOfNightsWithoutSleeping2() {
 
         NightsWithoutSleeping function = new NightsWithoutSleeping();
 
@@ -173,7 +173,7 @@ public class SleepTrackerAppTest {
     }
 
     @Test
-    void CountOfEmptyListOfSleeping() {
+    void countOfEmptyListOfSleeping() {
 
         NightsWithoutSleeping function = new NightsWithoutSleeping();
 
