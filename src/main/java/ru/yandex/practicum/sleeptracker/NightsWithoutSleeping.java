@@ -29,9 +29,11 @@ public class NightsWithoutSleeping implements SleepAnalysisFunction {
                     if (session.getTimeOfStart().isAfter(session.getTimeOfEnd())) {
                         return session.getDayOfEnd();
                     }
+
                     if (session.getTimeOfStart().getHour() < 6) {
                         return session.getDayOfStart();
                     }
+
                     return null;
 
                 })
