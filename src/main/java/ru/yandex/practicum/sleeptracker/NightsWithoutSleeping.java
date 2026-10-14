@@ -9,9 +9,11 @@ public class NightsWithoutSleeping implements SleepAnalysisFunction {
 
     @Override
     public SleepAnalysisResult apply(List<SleepingSession> sessions) {
-        if (sessions.isEmpty()){
+
+        if (sessions.isEmpty()) {
             return new SleepAnalysisResult("Ночей без сна", 0);
         }
+
         SleepingSession start = sessions.get(0);
         SleepingSession end = sessions.get(sessions.size() - 1);
 
