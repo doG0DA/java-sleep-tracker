@@ -11,12 +11,15 @@ public class ClassificationOfUser implements SleepAnalysisFunction {
     public SleepAnalysisResult apply(List<SleepingSession> sessions) {
         long allNights = sessions.stream()
                 .map(session -> {
+
                     if (session.getTimeOfStart().isAfter(session.getTimeOfEnd())) {
                         return session.getDayOfEnd();
                     }
+
                     if (session.getTimeOfStart().getHour() < 6){
                         return  session.getDayOfStart();
                     }
+
                     return null;
 
 
@@ -40,6 +43,7 @@ public class ClassificationOfUser implements SleepAnalysisFunction {
         long pigeons = allNights - lark - owl;
 
         Chronotype type;
+
         if (owl > lark && owl > pigeons) {
             type = Chronotype.OWL;
         } else if(lark > owl && lark > pigeons) {
