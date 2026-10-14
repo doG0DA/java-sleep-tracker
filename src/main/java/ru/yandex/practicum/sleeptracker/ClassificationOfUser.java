@@ -46,7 +46,7 @@ public class ClassificationOfUser implements SleepAnalysisFunction {
 
         if (owl > lark && owl > pigeons) {
             type = Chronotype.OWL;
-        } else if(lark > owl && lark > pigeons) {
+        } else if (lark > owl && lark > pigeons) {
             type = Chronotype.LARK;
         } else {
             type = Chronotype.PIGEON;
