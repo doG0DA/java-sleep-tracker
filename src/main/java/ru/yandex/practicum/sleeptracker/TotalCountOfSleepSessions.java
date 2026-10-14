@@ -5,7 +5,7 @@ import java.util.List;
 public class TotalCountOfSleepSessions implements SleepAnalysisFunction {
 
     @Override
-    public SleepAnalysisResult apply(List<SleepingSession>sessions) {
+    public SleepAnalysisResult apply(List<SleepingSession> sessions) {
         return new SleepAnalysisResult("Всего сессий сна", sessions.size());
     }
 }
