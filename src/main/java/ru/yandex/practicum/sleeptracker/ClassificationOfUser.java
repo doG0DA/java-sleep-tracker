@@ -16,7 +16,7 @@ public class ClassificationOfUser implements SleepAnalysisFunction {
                         return session.getDayOfEnd();
                     }
 
-                    if (session.getTimeOfStart().getHour() < 6){
+                    if (session.getTimeOfStart().getHour() < 6) {
                         return  session.getDayOfStart();
                     }
 
@@ -61,7 +61,6 @@ public class ClassificationOfUser implements SleepAnalysisFunction {
         boolean afterMidnight = session.getTimeOfStart().getHour() < 6;
 
         return crossedMidnight || afterMidnight;
-
     }
 
     public boolean isOwl(SleepingSession session) {
