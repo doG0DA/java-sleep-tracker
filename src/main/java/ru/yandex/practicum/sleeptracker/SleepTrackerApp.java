@@ -45,8 +45,5 @@ public class SleepTrackerApp {
             SleepAnalysisResult result = function.apply(sessions);
             System.out.println(result);
         });
-
-
-        
     }
 }
