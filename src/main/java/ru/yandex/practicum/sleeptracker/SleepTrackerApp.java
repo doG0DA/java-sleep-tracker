@@ -46,6 +46,6 @@ public class SleepTrackerApp {
             return;
         }
 
-        SleepAnalysis(sessions);
+        sleepAnalysis(sessions);
     }
 }
