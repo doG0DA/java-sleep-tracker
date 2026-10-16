@@ -208,6 +208,19 @@ public class SleepTrackerAppTest {
         assertEquals("Вы относитесь к классу: Голубь", result.toString());
     }
 
+    @Test
+    void isPersonWithScheduleLark() {
+
+        ClassificationOfUser function = new ClassificationOfUser();
+
+        SleepingSession session1 = new SleepingSession("05.10.25", "20:10", "05.10.25", "06:00", QualityOfSleep.GOOD);
+        SleepingSession session2 = new SleepingSession("06.10.25", "21:50", "07.10.25", "05:00", QualityOfSleep.GOOD);
+
+        SleepAnalysisResult result = function.apply(List.of(session1,session2));
+
+        assertEquals("Вы относитесь к классу: Жаворонок", result.toString());
+    }
+
 
 
 

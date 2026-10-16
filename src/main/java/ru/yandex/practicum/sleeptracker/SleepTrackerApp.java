@@ -19,6 +19,13 @@ public class SleepTrackerApp {
             new ClassificationOfUser()
     );
 
+    private static void SleepAnalysis(List<SleepingSession> sessions) {
+        FUNCTIONS.forEach(function -> {
+            SleepAnalysisResult result = function.apply(sessions);
+            System.out.println(result);
+        });
+    }
+
     public static void main(String[] args) throws IOException {
 
         if (args.length < 1) {
@@ -39,11 +46,6 @@ public class SleepTrackerApp {
             return;
         }
 
-
-
-        FUNCTIONS.forEach(function -> {
-            SleepAnalysisResult result = function.apply(sessions);
-            System.out.println(result);
-        });
+        SleepAnalysis(sessions);
     }
 }
