@@ -19,7 +19,7 @@ public class SleepTrackerApp {
             new ClassificationOfUser()
     );
 
-    private static void SleepAnalysis(List<SleepingSession> sessions) {
+    private static void sleepAnalysis(List<SleepingSession> sessions) {
         FUNCTIONS.forEach(function -> {
             SleepAnalysisResult result = function.apply(sessions);
             System.out.println(result);
